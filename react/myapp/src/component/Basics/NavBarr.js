@@ -1,5 +1,4 @@
 import React from 'react'
-//oldnavbar
 import { Stack } from '@mui/material'
 export const logo ='./logo/1.png'
 
