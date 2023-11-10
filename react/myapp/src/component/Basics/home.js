@@ -5,7 +5,7 @@ import LoginButton from './login.js'
 import LogoutButton from './logout.js'
 import { useEffect } from 'react'
 import {gapi} from 'gapi-script'
-
+import Footer from './Footer.js'
 export const logo ='./logo/1.png'
 export const logo2 ='./logo/google.png'
 
@@ -32,7 +32,16 @@ const Home = () => {
 <>
 <div className='Home'>
     <div class="full-body-wrapper">
-      <div class = "card-container1 text-center">
+    <div class="container">
+              <img src="https://i.pinimg.com/originals/dd/17/cb/dd17cb0f0e436fa60ace35306478a32d.png"/>
+              <div class="content">
+
+                </div>
+    </div>
+    
+  </div>
+     {/* <div class = "card-container1 text-center">
+    
         <div class="container1">
         <div className='abc'>
             <img src={logo} className='logo3'/>
@@ -55,24 +64,21 @@ const Home = () => {
           </div>
           <br/>
           <div class="button-cont center-block">
-           {/* <div className='cardbutton '>  */}
+   
                
            <LoginButton/>
       <LogoutButton/>
           </div>
-       
+        </div>
       </div>
-    </div>  
-  </div>
-  </div>
-  <div className='footer'>
+    </div>   */}
 
-    © Class Book inc. 2023.
-    <br/>
-    email us at haitmadhurya@gmail.com
- 
-  
-  </div>
+
+   <Footer/>
+
+   
+
+</div>
 </>
     
   )
