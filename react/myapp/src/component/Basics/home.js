@@ -31,14 +31,28 @@ const Home = () => {
 
 <>
 <div className='Home'>
+  
     <div class="full-body-wrapper">
+    
     <div class="container">
               <img src="https://i.pinimg.com/originals/dd/17/cb/dd17cb0f0e436fa60ace35306478a32d.png"/>
               <div class="content">
+                <h1 style={{paddingTop:'6.6rem', paddingBottom:'1rem', scale:'1.2'}}>classbook</h1>   
 
-                </div>
+                <h3 style={{fontSize: '25px', paddingBottom:'3.8rem'}} className='heading'>log in to start the fun</h3>
+            <hr/> 
+       
+
+        <div class="section2">
+                <LoginButton/>
+                <p style={{backgroundColor:'transparent',color:'white',fontWeight:'1'}}>Create a <a style={{backgroundColor:'transparent'}}href = "https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https%3A%2F%2Fwww.google.com%2Fsearch%3Fclient%3Dsafari%26rls%3Den%26q%3Dgoogle%2Baccount%2Bpage%26ie%3DUTF-8%26oe%3DUTF-8&ec=GAlAAQ&hl=en&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S1996489549%3A1699642614328945&theme=glif">new account</a></p>
+          </div>
+          <br/>
+        
+              </div>
     </div>
-    
+    <h6 style={{color:"wheat"}} >Hover Above to Login : )</h6>
+   
   </div>
      {/* <div class = "card-container1 text-center">
     

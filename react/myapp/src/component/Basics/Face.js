@@ -1,6 +1,6 @@
 import React,{useState} from 'react' ;
 import data from "./dataApi.js";
-
+import NavBarr from './NavBarr.js';
 import LayoutCard from './LayoutCard.jsx';
 
 
@@ -15,7 +15,7 @@ const Face = () => {
 
   return (
   <>
-  
+   <NavBarr/>
   <LayoutCard studData={data}/>
   {/* //Parent to child data passing  */}
 

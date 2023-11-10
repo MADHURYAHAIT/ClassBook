@@ -1,5 +1,5 @@
 import {GoogleLogin} from 'react-google-login'
-
+import {FcGoogle} from 'react-icons/fc'
 const clientId="36910271547-g4gf1pe3a3ln92sfmj6n293s5k3vfnrp.apps.googleusercontent.com";
 
 function Login(){
@@ -14,12 +14,18 @@ function Login(){
         <div id="signInButton">
             <GoogleLogin
             clientId={clientId}
-            buttonText="Sign in with Google"
             onSuccess={onSuccess}
             onFailure={onFailure}
             cookiePolicy={'single_host_origin'}
             isSignedIn={true}
+            icon={false}
             />
+
+            <div class="button-cont center-block">
+                <div className='cardbutton '> 
+                    <FcGoogle className='icon1'/>Continue with Google
+                </div>
+            </div>
         </div>
     )
 }

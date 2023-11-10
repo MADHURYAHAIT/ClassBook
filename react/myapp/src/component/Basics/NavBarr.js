@@ -17,7 +17,6 @@ export default function NavBarr ()  {
         </div>
         </a>
         <div className='abc'>
-        
           <li><CustomLink className="nav-option"  href="/home">home</CustomLink></li>
           <li><CustomLink  className="nav-option" href="/students">students</CustomLink></li>
           <li><CustomLink className="nav-option" href="/about">about </CustomLink></li>

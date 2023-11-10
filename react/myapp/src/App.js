@@ -34,7 +34,7 @@ const App = () => {
     <div>
 
     <Box sx={{backgroundColor:'#1111'}}>
-      <NavBarr/>
+     
     </Box>
     
       <Current/>
