@@ -13,9 +13,9 @@ export const logo2 ='./logo/google.png'
 
 const clientId="36910271547-g4gf1pe3a3ln92sfmj6n293s5k3vfnrp.apps.googleusercontent.com";
 
-const home = () => {
+const Home = () => {
 
-   useEffect(()=>{
+  useEffect(()=>{
      function start(){
       gapi.client.init({
         clientId: clientId,
@@ -39,7 +39,7 @@ const home = () => {
             <div className='c'>class</div>book
         </div>
         </div>
-          <h3 sx={{font: '25px'}}>Log / Sign in to Class Book</h3>
+          <h3 sx={{font: '25px'}}>Log in start the fun</h3>
             <hr/> 
           <br/>
 
@@ -78,4 +78,4 @@ const home = () => {
   )
 }
 
-export default home
+export default Home
