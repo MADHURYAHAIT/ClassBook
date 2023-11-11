@@ -10,9 +10,6 @@ import ParticleBackground from './component/Basics/ParticleBackground'
 
 
 const App = () => {
-  
-
-
   let Current
   switch (window.location.pathname) {
     case "/":
