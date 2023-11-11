@@ -4,7 +4,7 @@ import NavBarr from './component/Basics/NavBarr'
 import { Box } from '@mui/material'
 import about from './component/Basics/about'
 import home from './component/Basics/home'
-
+import ParticleBackground from './component/Basics/ParticleBackground'
 
 
 
@@ -32,11 +32,11 @@ const App = () => {
 
   return (
     <div>
+      <ParticleBackground/>
 
     <Box sx={{backgroundColor:'#1111'}}>
      
     </Box>
-    
       <Current/>
     </div>
   )

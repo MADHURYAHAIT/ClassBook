@@ -1,5 +1,5 @@
 *{
-    background-color: #0f0f0f;
+    background-color: transparent;
 }
 .c{   
   color: aliceblue;
@@ -324,22 +324,20 @@ hr{
   
 }
 
-span{
+#signInButton span{
   color: transparent;
   background-color: transparent;
   visibility: hidden;
   padding: 0px !important;
 }
 
-button{
+#signInButton button{
   transform: translateY(13px) translateX(-120px);
   z-index: 3 !important;
   width: 240px;
   height: 30px;
   position: absolute;
   background-color: transparent !important;
-
-
   
 }
 
@@ -485,8 +483,8 @@ button{
 
 }
 .icon{
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   margin: 10px;
   color: #c6c6c6;
   background-color: transparent;

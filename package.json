@@ -1,5 +1,7 @@
 {
   "dependencies": {
-    "react-icons": "^4.11.0"
+    "react-icons": "^4.11.0",
+    "react-tsparticles": "^2.12.2",
+    "tsparticles": "^2.12.0"
   }
 }
