@@ -356,7 +356,18 @@ hr{
   width: 30px;
   height: 30px;
   position: absolute;
+  z-index: 3 !important;
   background-color: transparent !important;
+}
+
+#signOutButton1 button{
+  transform: translateY(13px) translateX(-50px);
+  width: 120px;
+  height: 30px;
+  position: absolute;
+  z-index: 3 !important;
+  background-color: transparent !important;
+
 }
 
 #signInButton ,#signOutButton{
@@ -430,6 +441,7 @@ hr{
     transition: .5s;
 }
 
+
 .containerlogo{
   position: absolute;
   top: 65%;  left: 30%;
@@ -467,6 +479,7 @@ hr{
   font-size: 100px;
 }
 
+
 .container img{
     display: inline-block;
     width: 100%;   height: 100%;
@@ -477,12 +490,30 @@ hr{
     /* box-shadow: 0 25px 15px rgb(0 0 0 / 50%); */
     border: 1px solid #e30b0b;
     box-shadow: 0 0 65px rgba(255, 3, 3, 0.845);
+}
+
+.front{
+  transform: translate(3%,10%);
+  display: inline-block;
+  color: rgb(176, 176, 176);
+  padding: 20px 15px;
+  width: 100%;   height: 100%;
+  border-radius: 30px;
+  backface-visibility: hidden; 
+  transition: .5s; 
+  text-align: center;  
+  scale: 1.1;
+  background: #1b1b1b;
+  border: 1px solid #e30b0b;
+  box-shadow: 0 0 65px rgba(255, 3, 3, 0.845);
 
 }
+
 .container:hover img{
     transform: perspective(1000px) rotateY(180deg);
 }
-.container .content{
+
+.container .content {
     position: absolute;
     top: 0;  left: 0;
     width: 100%;   height: 100%;
@@ -495,12 +526,12 @@ hr{
     box-shadow: 0 25px 15px rgb(0 0 0 / 50%);
     border: 1px solid #e30b0b;
     box-shadow: 0 0 65px rgba(255, 3, 3, 0.845);
-    
-
 }
+
 .container:hover .content{
     transform: perspective(1000px) rotateY(0);
 } 
+
 .content{
     padding: 20px;
     box-sizing: border-box;
@@ -560,4 +591,57 @@ hr{
 }
 .footer a{
   background-color: transparent !important;
+}
+
+/* 
+swappable cards */
+
+
+
+body {
+  background-color: #F75B60;
+}
+
+.center-content {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.cards-wrapper {
+  align-self: center;
+  position: relative;
+  width: 320px;
+  height: 480px;
+  
+  div {
+    position: absolute;
+    background-color: #fefefe;
+    border-radius: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.card-1 {
+  z-index: 3;
+  width: 320px;
+  height: 480px;
+}
+
+.card-2 {
+  z-index: 2;
+  top: 50px;
+  width: calc(320 * .93) px;
+  height: calc(480 * .93)px;
+  opacity: .8;
+}
+
+.card-3 {
+  z-index: 1;
+  top: 97px;
+  width: calc(320 * .85);
+  height: calc(480 * .85);
+  opacity: .2;
 }

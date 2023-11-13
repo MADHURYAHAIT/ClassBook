@@ -15,7 +15,7 @@ export const logo2 ='./logo/google.png'
 
 const clientId="36910271547-g4gf1pe3a3ln92sfmj6n293s5k3vfnrp.apps.googleusercontent.com";
 const Home = () => {
-  const[Data,setData]=useState('f')
+  const[UserData,setData]=useState('f')
   const[flag,setFlag]=useState(true);
     const onSuccess = (res) => {
       console.log("LOGIN SUCCESS! Current user: ",res.profileObj);
@@ -80,12 +80,11 @@ const Home = () => {
     </div>
   <Footer/>
 
-
 </div>
 </>
     
 )}
-else {return(<Profile />)
+else {return(<Profile profData={UserData}/>)
 }
 } 
 

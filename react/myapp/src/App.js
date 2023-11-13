@@ -2,7 +2,7 @@ import React from 'react'
 import Face from './component/Basics/Face'
 
 import { Box } from '@mui/material'
-import about from './component/Basics/about'
+import About from './component/Basics/about'
 import home from './component/Basics/home'
 import ParticleBackground from './component/Basics/ParticleBackground'
 
@@ -15,12 +15,15 @@ const App = () => {
     case "/":
       Current =Face
       break
+    case "/logout":
+      Current =home
+      break
     case "/students":
       Current =Face
       break
   
     case "/about":
-      Current=about
+      Current=About
       break
     case "/home":
       Current=home
