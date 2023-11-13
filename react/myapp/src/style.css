@@ -35,7 +35,7 @@ li{
   padding: 9px 20px;
 
 }
-.nav-option{
+.nav-option {
   color: white;
   padding-right: 3%;
   font-size: 25px;
@@ -44,11 +44,11 @@ li{
 .nav-option:hover{
   color: #ff4508 !important;
 }
-.nav-active{
-  text-decoration: underline;
+.Navactive a{
+ 
   font-size: 25px;
   background-color: black;
-  color: #ffffff; 
+  color:  #ff5d30 !important; 
 }
 .nav-active:hover{
   color: #ff5d30;
@@ -341,9 +341,9 @@ hr{
   padding: 0px !important;
 }
 
-#signInButton button {
+#signInButton button{
   transform: translateY(13px) translateX(-120px);
-  z-index: 3 !important;
+  z-index: 1 !important;
   width: 240px;
   height: 30px;
   position: absolute;
@@ -352,12 +352,11 @@ hr{
 }
 
 #signOutButton button{
-  transform: translateY(13px) translateX(-120px);
-  z-index: 3 !important;
-  width: 240px;
+  transform: translateY(13px) translateX(10px);
+  width: 30px;
   height: 30px;
   position: absolute;
-  /* background-color: transparent !important; */
+  background-color: transparent !important;
 }
 
 #signInButton ,#signOutButton{
@@ -433,18 +432,17 @@ hr{
 
 .containerlogo{
   position: absolute;
-  top: 60%;  left: 30%;
+  top: 65%;  left: 30%;
   transform: translate(-50%,-50%) ;
   width: auto;   height: 530px;
   border-radius: 30px;
   transition: .5s;
   display: flex;
-
 }
 
 .navlogo{
   position: absolute;
-  top: 10%;  left: 2cm;
+  top: 10%;  left: 1cm;
   padding: 1%;
   /* transform: translate(-50%,-50%) ; */
   width: auto;   height: auto;
@@ -514,22 +512,21 @@ hr{
     text-align: center;  
 }
 
- .Home{
-   padding: 50px ,230px ,330px;
-   min-height: 100vh;
-   background-color: transparent;
-   display: flex;
-   flex-direction: column;
- }
- 
- .Profile{
+.Home{
+    padding: 50px ,230px ,330px;
+    min-height: 100vh;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+}
+
+.Profile ,.About{
   padding: 50px ,230px ,330px;
   min-height: 100vh;
   background-color: transparent;
   display: flex;
   flex-direction: column;
 }
-
 
 .footer{
   background-color: rgba(127, 127, 127, 0.358);
@@ -554,8 +551,10 @@ hr{
 }
 .icon:hover{
   scale: 1.1;
+  color: #e30b0b;
   transition: 0.5s;
 }
+
 .footer1{
   background-color: transparent;
 }

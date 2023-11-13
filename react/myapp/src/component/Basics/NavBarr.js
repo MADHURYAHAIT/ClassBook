@@ -45,10 +45,10 @@ export default function NavBarr ()  {
 function CustomLink({href,children, ...props}){
   const path = window.location.pathname
   return(
-    <li className={path===href ? "nav-active":""}> 
-    <a href={href}{...props}>
-      {children}
-    </a>
+    <li className={path===href ? "Navactive":""}> 
+      <a href={href}{...props}>
+        {children}
+      </a>
 
     </li>
   )

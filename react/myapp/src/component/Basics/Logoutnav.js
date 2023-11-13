@@ -7,6 +7,7 @@ function Logoutnav(){
 
     const onSuccess=(res)=>{
         console.log("Log Out Successfully!",res);
+        
        
 
     }
@@ -19,7 +20,7 @@ function Logoutnav(){
             isSignedIn={false}
             icon={false}
             // redirect='./home'
-          
+
             />
 
                 <IoIosLogOut className='icon'/>
