@@ -7,15 +7,12 @@ function Logoutnav(){
 
     const onSuccess=(res)=>{
         console.log("Log Out Successfully!",res);
-        
-       
-
     }
+
     return(
         <div id="signOutButton">
             <GoogleLogout
             clientId={clientId}
-            buttonText={'Logout'}
             onLogoutSuccess={onSuccess}
             isSignedIn={false}
             icon={false}
