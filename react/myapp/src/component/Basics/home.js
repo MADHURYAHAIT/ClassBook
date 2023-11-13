@@ -15,16 +15,17 @@ export const logo2 ='./logo/google.png'
 
 const clientId="36910271547-g4gf1pe3a3ln92sfmj6n293s5k3vfnrp.apps.googleusercontent.com";
 const Home = () => {
-  const[Data,setData]='';
-  const[flag,setFlag]=useState(false);
+  const[Data,setData]=useState('f')
+  const[flag,setFlag]=useState(true);
     const onSuccess = (res) => {
       console.log("LOGIN SUCCESS! Current user: ",res.profileObj);
       setData(res.profileObj);
-      setFlag(true);
+      setFlag(false);
 
   }
   const onFailure=(res)=>{
       console.log("LOGIN FAILED! res: ",res);
+      setFlag(true);
   } 
   useEffect(()=>{
      function start(){
@@ -38,7 +39,7 @@ const Home = () => {
   
 
 
-  if (flag==true){return (
+  if(flag!=false){return (
 
 <>
 <div className='Home'>
@@ -53,7 +54,6 @@ const Home = () => {
                         <img src="https://i.pinimg.com/originals/dd/17/cb/dd17cb0f0e436fa60ace35306478a32d.png"/>
                         <div class="content">
                             <h1 style={{paddingTop:'6.6rem', paddingBottom:'1rem', scale:'1.2'}}>classbook</h1>   
-
                             <h3 style={{fontSize: '25px', paddingBottom:'3.8rem'}} className='heading'>log in to start the fun</h3>
                             <hr/> 
                             <div class="section2">
@@ -78,7 +78,6 @@ const Home = () => {
         </div>
         <h6 style={{color:"wheat", marginRight:'-42%'}} >Hover above to Login</h6>
     </div>
-
   <Footer/>
 
 
@@ -86,8 +85,7 @@ const Home = () => {
 </>
     
 )}
-else {return(<Profile data={Data}/>)
-   
+else {return(<Profile />)
 }
 } 
 

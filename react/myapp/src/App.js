@@ -1,6 +1,6 @@
 import React from 'react'
 import Face from './component/Basics/Face'
-import NavBarr from './component/Basics/NavBarr'
+
 import { Box } from '@mui/material'
 import about from './component/Basics/about'
 import home from './component/Basics/home'
