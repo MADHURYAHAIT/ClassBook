@@ -44,13 +44,24 @@ const Profile = () => {
             </div>
         </div>
 
+        <div class="container">
+            <div class="front">
+           
+            <div class="section2">
+                <h1>Hi</h1>
+            
+                    <div class="button-cont center-block">
+                        <div className='cardbutton ' onClick={responseGoogle}> 
+                            <FcGoogle className='icon1'/> Logout
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
       
 
-            <div class="button-cont center-block">
-                <button className='cardbutton ' onClick={responseGoogle}> 
-                    <FcGoogle className='icon1'/>Logout
-                </button>
-            </div>
+           
 
       
         <Footer/>

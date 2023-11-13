@@ -1,5 +1,8 @@
 {
   "dependencies": {
+    "gsap": "^3.12.2",
+    "jquery": "^3.7.1",
+    "jquery-ui-dist": "^1.13.2",
     "react-icons": "^4.11.0",
     "react-tsparticles": "^2.12.2",
     "tsparticles": "^2.12.0"
