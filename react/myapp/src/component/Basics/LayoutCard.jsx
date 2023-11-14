@@ -26,7 +26,7 @@ const LayoutCard= ({studData}) => {
                     
                   </span>
 
-                  <div className='card-read'>Know More</div>
+                  <div className='card-read'> Photo</div>
                   <img src={curElem.image} alt="images" className='card-media'/>
                   <br/>
                   <span className='card-tag subtle'>Rate Me</span>

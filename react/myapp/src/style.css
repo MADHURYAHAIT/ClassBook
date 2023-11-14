@@ -22,7 +22,7 @@
   color: rgb(222, 49, 10);
   font-weight: 700;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 50px;
+  font-size: 36px;
   padding-right:  8px ;
   cursor: pointer;
 }
@@ -32,17 +32,16 @@ li{
   flex-direction: row;
   justify-content: flex-start;
   justify-content: space-around;
-  padding: 9px 20px;
-
+  padding: 9px 12px;
 }
 .nav-option {
-  color: white;
-  padding-right: 3%;
+  color: rgb(203, 203, 203);
+  padding-right: 1%;
   font-size: 25px;
   background-color: black;
 }
 .nav-option:hover{
-  color: #ff4508 !important;
+  color: #ffffff !important;
 }
 .Navactive a{
  
@@ -192,8 +191,6 @@ li{
 a {
  text-decoration: none;
   background-color: #000000;
-
-
 }
 
 
@@ -403,15 +400,11 @@ hr{
   font-weight: 600;
   font-family:sans-serif;
   display: flex;
-  flex-direction: column;
-  
+  flex-direction: column; 
 }
-
 .button-cont:hover{
   border-color: #ffffff;
 }
-
-
 .card-container1{
   animation: spin 2.5s linear infinite;
   margin: 40px auto 0;
@@ -426,11 +419,7 @@ hr{
   box-shadow: 0 0 65px rgba(255, 3, 3, 0.845);
   justify-content: space-between;
   align-items: center;
-
 }
-
-
-
 
 /* new login */
 
@@ -463,8 +452,8 @@ hr{
 
 .Aboutlogo{
   position: absolute;
-  top: 40%;  left: 34%;
-  transform: translate(0%,0%) ;
+  top: 66%;  left: 49%;
+  transform: translate(-50%,-50%) ;
   width: auto;   height: 530px;
   transition: .5s;
   display: flex;
@@ -619,7 +608,6 @@ hr{
   color: #e30b0b;
   transition: 0.5s;
 }
-
 .footer1{
   background-color: transparent;
 }
@@ -627,7 +615,6 @@ hr{
   background-color: transparent !important;
 }
 
-/* 
-swappable cards */
+/* swappable cards */
 
 

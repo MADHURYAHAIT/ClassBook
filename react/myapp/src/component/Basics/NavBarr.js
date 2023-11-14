@@ -33,8 +33,6 @@ export default function NavBarr ()  {
           <li><CustomLink  className="nav-option" href="/students">students</CustomLink></li>
           <li><CustomLink className="nav-option" href="/about">about </CustomLink></li>
           <li><CustomLink className="nav-option" href="/logout"><LogoutButton/> </CustomLink></li>
-
-
         </div>
         
       </Stack>

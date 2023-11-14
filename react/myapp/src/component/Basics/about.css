@@ -143,12 +143,13 @@ header {
 	color: rgb(10, 5, 7);
 	border-radius: 1em;
 	overflow: hidden;
-
 	display: grid;
 	grid-template-areas: "text img";
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: auto;
-
+/* 	
+    border: 1px solid #e30b0b;
+    box-shadow: 0 0 65px rgba(255, 3, 3, 0.845); */
 	align-items: stretch;
 	outline: var(--outline-width) solid lime;
 }
@@ -166,23 +167,26 @@ header {
 
 .card__content > figure {
 	grid-area: img;
+    /* place-self: center; */
 	overflow: hidden;
 }
 
 .card__content > figure > img {
-	width: 100%;
-	height: 100%;
+	width: 80%;
+	height: 80%;
+    /* border-radius: 50%; */
 	object-fit: cover;
 }
 
-.About h1 {
+header h1 ,main h1{
 	font-weight: 300;
-	font-size: 3.5em;
+	font-size: 4.7em;
 }
 
 .About  h2 {
 	font-weight: 300;
-	font-size: 2.5em;
+	font-size: 2.0em;
+    color: #e30b0b;
 }
 
 .About p {
