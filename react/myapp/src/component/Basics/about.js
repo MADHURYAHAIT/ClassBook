@@ -3,50 +3,22 @@ import NavBarr from './NavBarr'
 import Footer from './Footer'
 import {BiSolidUserPin} from 'react-icons/bi'
 import { useEffect } from 'react'
+import './about.css'
+import { CiCircleChevDown } from "react-icons/ci";
+
 import $ from 'jquery'
-import 'jquery-ui-dist/jquery-ui'
-import { TimelineMax } from 'gsap';
+// import 'jquery-ui-dist/jquery-ui'
+// import 'jquery-ui-bundle';
+// import 'jquery-ui-bundle/jquery-ui.min.css';
+
+
 
 const About = () => {
-  useEffect(() => {
-// document.ontouchmove = function(event){
-//   event.preventDefault();
-// }
+  
+  // useEffect(() => {
 
-      // Caching stuff
-      var cards = $('.cards-wrapper div'),
-      tl = new TimelineMax(),
-      x = 0;
-
-    // Animation
-      tl.to(cards[0], .25, { top: 40, left: -160, opacity: .5 });
-      tl.to(cards[0], .25, { top: 97, left: 160, width: (320*.85), height: (480*.85), opacity: .2, 'z-index': 1 });
-      tl.to(cards[1], .45, { width: 320, height: 480, opacity: 1, 'z-index': 3, top:0, delay:-.6 });
-      tl.to(cards[2], .45, { width: (320*.93), height: (480*.93), top: 50, opacity: .85, 'z-index': 2, delay:-.6 });
-
-    // Controls
-      $('#play').on('click', function() {
-        tl.play(0);
-        tl.timeScale(1);
-      });
-
-      $('#reverse').on('click', function() {
-        tl.reverse(0);
-        tl.timeScale(1.5);
-      });
-
-    // On Swipe
-      $(".cards-wrapper").swipe( {
-        swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
-          if(direction == "right") {
-            tl.reverse(0).timeScale(1.5);
-          } else if(direction == "left") {
-            tl.play(0).timeScale(1);
-          }
-        },
-        threshold: 0
-      });
-  }, []);
+    
+  // }, []);
 
 
   return (
@@ -54,24 +26,88 @@ const About = () => {
     <div className='About'>
 
     <NavBarr/>
-    <div class="full-body-wrapper">
+
+    {/* <div class="full-body-wrapper">
         <div class='containerlogo'>
         <BiSolidUserPin className='l'/>
         <h1>class<div className='book'>book</div></h1>
         </div>
-    </div>
+    </div> */}
 
+
+
+
+<header>
+	<div>
+   
+        <div class='Aboutlogo' >
+        <BiSolidUserPin style={{paddingTop: '6px',fontSize:'80px',color: 'rgb(222, 49, 10)'}} />
+        <h1>class</h1><h1 className ='book'>book</h1>
+        </div>
+		    <p style={{color:'wheat',paddingTop:'250px'}}>Scroll down</p><br/>
+        <CiCircleChevDown style={{paddingTop: '-10px',fontSize:'60px',color: 'wheat'}} />
+	</div>
+</header>
+
+<main>
+	<ul id="cards">
+		<li class="Aboutcard" id="card_1">
+			<div class="card__content">
+				<div>
+					<h2>Card One</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					<p><a href="#top" class="btn btn--accent">Read more</a></p>
+				</div>
+				<figure>
+					<img src="https://codyhouse.co/demo-tutorials/stacking-cards/assets/img/img-1.jpg" alt="Image description"/>
+				</figure>
+			</div>
+		</li>
+		<li class="Aboutcard" id="card_2">
+			<div class="card__content">
+				<div>
+					<h2>Card Two</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					<p><a href="#top" class="btn btn--accent">Read more</a></p>
+				</div>
+				<figure>
+					<img src="https://codyhouse.co/demo-tutorials/stacking-cards/assets/img/img-2.jpg" alt="Image description"/>
+				</figure>
+			</div>
+		</li>
+		<li class="Aboutcard" id="card_3">
+			<div class="card__content">
+				<div>
+					<h2>Card Three</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					<p><a href="#top" class="btn btn--accent">Read more</a></p>
+				</div>
+				<figure>
+					<img src="https://codyhouse.co/demo-tutorials/stacking-cards/assets/img/img-3.jpg" alt="Image description"/>
+				</figure>
+			</div>
+		</li>
+		<li class="Aboutcard" id="card_4">
+			<div class="card__content">
+				<div>
+					<h2>Card Four</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					<p><a href="#top" class="btn btn--accent">Read more</a></p>
+				</div>
+				<figure>
+					<img src="https://codyhouse.co/demo-tutorials/stacking-cards/assets/img/img-2.jpg" alt="Image description"/>
+				</figure>
+			</div>
+		</li>
+	</ul>
+</main>
+<aside>
+	<p>This App is only for fun and not meant to harm anyones feelings </p>
+</aside>
   
-    <button id="play">Play</button>
-    <button id="reserve">Reverse</button>
 
-    <div class="center-content">
-      <div class="cards-wrapper">
-        <div class="card-1"></div>
-        <div class="card-2"></div>
-        <div class="card-3"></div>
-      </div>
-    </div>
+
+
   
     <Footer/>
 </div>
