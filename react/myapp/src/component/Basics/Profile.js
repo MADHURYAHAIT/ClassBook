@@ -18,6 +18,9 @@ const Profile = (Prp) => {
     <div className='Profile'>
        
         <NavBarr/>
+       
+
+       
         <div class="full-body-wrapper">
             <div class='containerlogo'>
             <BiSolidUserPin className='l'/>
@@ -26,24 +29,25 @@ const Profile = (Prp) => {
         </div>
 
         <div class="profcontainer">
-            <div class="front-profile">
-           
-            <div class="section2">
-                <h1 className='book'>{Prp.profData.givenName}</h1>
-                <h5 style={{color:'white'}}>Profile</h5><br/>
-                {/* <img href={Img}/> */}
-                <img src={Img} alt={Prp.profData.name}/>
-                <hr/>
-                 User Name :  <i style={{color:'white'}}>{Prp.profData.name}</i><br/>
-                email Id : <i style={{color:'white'}}>{Prp.profData.email}</i>
-
+            <div class="section3">
+                <div class="front-profile">
+                <div class="section2">
+                    <h1 className='book'>{Prp.profData.givenName}</h1>
+                    <h5 style={{color:'white'}}>Profile</h5><br/>
+                    {/* <img href={Img}/> */}
+                    <img src={Img} alt={Prp.profData.name}/>
                     <hr/>
-                    <GoogleLogout/>
+                    User Name :  <i style={{color:'white'}}>{Prp.profData.name}</i><br/>
+                    email Id : <i style={{color:'white'}}>{Prp.profData.email}</i>
+
+                        <hr/>
+                        <GoogleLogout/>
+                    </div>
                 </div>
             </div>
         </div>
 
-      
+       
 
            
 

@@ -68,6 +68,7 @@ li{
 
 .main-card--cointainer {
   display: grid;
+  transform: translateY(2%);
   grid-template-columns: repeat(3, minmax(460px, 460px));
   grid-gap: 0.5rem;
   padding: 6px;
@@ -84,13 +85,24 @@ li{
   }
 }
 
+@keyframes fadeSwipeUp {
+  to {
+    opacity: 1;
+    transform: translateY(-22%);
+  }
+}
+
 .card-container{
   margin: 55px auto 0;
   position: relative;
   display: grid;
   grid-template-columns: 4fr;
   
-  animation: fadeInOut 2s  alternate;
+  /* animation: fadeInOut 2s  alternate; */
+}
+.card{
+  animation: fadeSwipeUp 2s forwards;
+
 }
 .card-container img {
   /* max-width: auto;
@@ -385,7 +397,6 @@ hr{
   box-shadow: none !important;  
   position: absolute;
   background-color: transparent !important;
-
   
 }
 
@@ -542,7 +553,8 @@ hr{
   transform: translate(3%,10%);
   display: inline-block;
   color: rgb(176, 176, 176);
-  padding: 50px 15px;
+  padding: 40px 15px;
+  padding-bottom: 27px;
   width: 100%;   height: 100%;
   border-radius: 30px;
   backface-visibility: hidden; 
@@ -603,7 +615,10 @@ hr{
     background-color: transparent;
     text-align: center;  
 }
-
+.section3 {
+  /* animation: fadeSwipeUp 4s  forwards; */
+  animation: fadeInOut 2s  alternate;
+}
 .Home{
     animation: fadeInOut 2s  alternate;
     padding: 50px ,230px ,330px;
