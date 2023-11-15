@@ -27,6 +27,19 @@
 	--index: 4;
 }
 
+@keyframes fadeInOut {
+	0% {
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 1;
+	}
+  }
+  
+.About{
+	animation: fadeInOut 2s  alternate;
+}
+
 .Aboutcard {
 	position: sticky;
 	top: 0;
@@ -114,7 +127,7 @@ main {
 	padding-top: 250%;
 }
 header {
-	height: 55vh;
+	height: 50vh;
 	display: grid;
 	place-items: center;
 }

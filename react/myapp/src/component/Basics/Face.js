@@ -27,7 +27,7 @@ const Face = () => {
   };
 
   return (
-  <>
+  <div class="face">
   
    <NavBarr/>
  
@@ -45,9 +45,10 @@ const Face = () => {
 
   <LayoutCard studData={studData}/>
   {/* //Parent to child data passing  */}
+  <br/><br/>
   <Footer/>
 
-</>
+</div>
   )
   
 }

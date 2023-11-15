@@ -68,10 +68,20 @@ li{
 
 .main-card--cointainer {
   display: grid;
-  grid-template-columns: repeat(3, minmax(400px, 400px));
+  grid-template-columns: repeat(3, minmax(460px, 460px));
   grid-gap: 0.5rem;
-  padding: 10px;
+  padding: 6px;
   justify-content: space-around;
+ 
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .card-container{
@@ -79,12 +89,39 @@ li{
   position: relative;
   display: grid;
   grid-template-columns: 4fr;
-  justify-content: space-around;
-  align-items: flex-start;
+  
+  animation: fadeInOut 2s  alternate;
 }
 .card-container img {
-  max-width: auto;
-  height: 270px;
+  /* max-width: auto;
+  height: 240px; */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   
+}
+.imageholder{
+  width: 100%;
+  display: flex;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-direction: column;
+ 
+}
+.circularframe{
+  width: 150px;
+      height: 150px;
+      overflow: hidden;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      
+}
+.card h2{
+      width: 380px; /* Adjust the width as needed */
+      white-space: nowrap;
+      font-size: 45px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    
 }
 
 .card {
@@ -568,11 +605,15 @@ hr{
 }
 
 .Home{
+    animation: fadeInOut 2s  alternate;
     padding: 50px ,230px ,330px;
     min-height: 100vh;
     background-color: transparent;
     display: flex;
     flex-direction: column;
+}
+.face{
+  animation: fadeInOut 2s  alternate;
 }
 
 .Profile ,.About{
@@ -685,4 +726,11 @@ hr{
 	transform: translatey(-2px);
   }
 
+/* Star */
 
+.Staricon{
+ font-size: 22px;
+  margin: 2px;
+  color: rgb(213, 190, 19) !important;
+
+}
