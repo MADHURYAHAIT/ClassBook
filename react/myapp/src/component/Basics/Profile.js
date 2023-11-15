@@ -3,7 +3,6 @@ import{BiSolidUserPin} from 'react-icons/bi'
 import NavBarr from './NavBarr'
 import Footer from './Footer'
 import GoogleLogout from './logout'
-import {FcGoogle} from 'react-icons/fc'
 
 const clientId="36910271547-g4gf1pe3a3ln92sfmj6n293s5k3vfnrp.apps.googleusercontent.com";
 
@@ -33,7 +32,7 @@ const Profile = (Prp) => {
                 <h1 className='book'>{Prp.profData.givenName}</h1>
                 <h5 style={{color:'white'}}>Profile</h5><br/>
                 {/* <img href={Img}/> */}
-                <img src={url} alt={Prp.profData.name}/>
+                <img src={Img} alt={Prp.profData.name}/>
                 <hr/>
                  User Name :  <i style={{color:'white'}}>{Prp.profData.name}</i><br/>
                 email Id : <i style={{color:'white'}}>{Prp.profData.email}</i>

@@ -290,7 +290,7 @@ hr{
 
 .icon1{
   width: 38px;
-  padding-right: 10px;
+  padding-right: 0px;
   background-color: transparent;
   /* padding-bottom: 5px; */
 
@@ -348,6 +348,7 @@ hr{
   box-shadow: none !important;  
   position: absolute;
   background-color: transparent !important;
+
   
 }
 
@@ -364,8 +365,8 @@ hr{
 }
 
 #signOutButton1 button{
-  transform: translateY(13px) translateX(-50px);
-  width: 120px;
+  transform: translateY(13px) translateX(-120px);
+  width: 240px;
   color: transparent !important;
   border-color: transparent !important;
   box-shadow: none !important;  
