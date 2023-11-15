@@ -1,6 +1,6 @@
 import React from 'react'
 import Star from './Star'
-
+import Vote from './vote'
 
 const LayoutCard= ({studData}) => {
     //console.log(studData);
@@ -34,9 +34,11 @@ const LayoutCard= ({studData}) => {
                   </span>
                   {/* <div className='card-read'> Photo</div> */}
                   <hr/>
-                 
+
                   <i>Ratings : </i>
                   <Star stars={curElem.CGPA/2} reviews={34}/>
+
+                  <Vote studentId={curElem.No} />
                   <span className='card-tag subtle'>Rate Me</span>
                 </div>
             </div>
