@@ -1,17 +1,14 @@
 :root {
-	--card-height: 40vw;
+	--card-height: 43vw;
 	--card-margin: 4vw;
 	--card-top-offset: 1em;
 	--numcards: 4;
-	--outline-width: 0px;
+	--outline-width: 0;
 }
-
-
 
 #cards {
 	padding-bottom: calc(var(--numcards) * var(--card-top-offset)); /* Make place at bottom, as items will slide to that position*/
 	margin-bottom: var(--card-margin); /* Don't include the --card-margin in padding, as that will affect the scroll-timeline*/
-
 }
 
 #card_1 {
@@ -45,8 +42,7 @@
 			/* Start when the start edge touches the top of the scrollport */
 			selector(#cards) start 1,
 			/* End when the start edge touches the start of the scrollport */
-			selector(#cards) start 0
-		;
+			selector(#cards) start 0;
 		start: selector(#cards) start 1; /* Start when the start edge touches the top of the scrollport */
 		end: selector(#cards) start 0; /* End when the start edge touches the start of the scrollport */
 		time-range: 4s;
@@ -61,10 +57,8 @@
 	.card__content {
 		transform-origin: 50% 0%;
 		will-change: transform;
-
 		--duration: calc(var(--reverse-index0) * 1s);
 		--delay: calc(var(--index0) * 1s);
-
 		animation: var(--duration) linear scale var(--delay) forwards;
 		animation-timeline: cards-element-scrolls-in-body;
 	}
@@ -113,12 +107,14 @@
 
 header,
 main {
-	width: 80vw;
+	width: 73vw;
 	margin: 0 auto;
 }
-
+.scroldwn{
+	padding-top: 210%;
+}
 header {
-	height: 85vh;
+	height: 55vh;
 	display: grid;
 	place-items: center;
 }
@@ -126,7 +122,7 @@ header {
 #cards {
 	list-style: none;
 	outline: calc(var(--outline-width) * 10) solid blue;
-	
+	scale:0.8;
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: repeat(var(--numcards), var(--card-height));
@@ -138,7 +134,7 @@ header {
 }
 
 .card__content {
-	box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0.2em 5em rgba(0, 0, 0, 0.627), 0 1em 5em rgba(0, 0, 0, 0.592);
 	background: rgb(255, 255, 255);
 	color: rgb(10, 5, 7);
 	border-radius: 1em;
@@ -172,7 +168,7 @@ header {
 }
 
 .card__content > figure > img {
-	width: 80%;
+	width: auto;
 	height: 80%;
     /* border-radius: 50%; */
 	object-fit: cover;
@@ -191,8 +187,10 @@ header h1 ,main h1{
 
 .About p {
 	font-family: sans-serif;
-	font-weight: 300;
-	line-height: 1.42;
+	font-weight: 230;
+	line-height: 1.52;
+	font-size: 24px;
+	scale: 0.8;
 }
 
 .btn {
@@ -207,9 +205,10 @@ header h1 ,main h1{
 aside {
 	width: 50vw;
 	margin: 0 auto;
-	text-align: left;
+	margin-top: -300px;
+	text-align: center;
 }
 
 aside p {
-	margin-bottom: 1em;
+	margin-bottom: 0em;
 }

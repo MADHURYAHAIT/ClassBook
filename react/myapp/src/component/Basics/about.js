@@ -6,7 +6,12 @@ import { useEffect } from 'react'
 import './about.css'
 import { CiCircleChevDown } from "react-icons/ci";
 import {profile} from '../../imgs/profile.jpeg'
+import img1 from '../../imgs/certificate.jpg'
+import img2 from '../../imgs/me.jpg'
+import { RiArrowDownDoubleLine } from "react-icons/ri";
+import { FaCircleArrowUp } from "react-icons/fa6";
 
+import img3 from '../../imgs/b.png'
 import $ from 'jquery'
 // import 'jquery-ui-dist/jquery-ui'
 // import 'jquery-ui-bundle';
@@ -15,52 +20,41 @@ import $ from 'jquery'
 
 
 const About = () => {
-  
-  // useEffect(() => {
 
-    
+  // useEffect(() => {
   // }, []);
 
 
-  return (
-
+	return (
     <div className='About'>
 
     <NavBarr/>
 
-    {/* <div class="full-body-wrapper">
-        <div class='containerlogo'>
-        <BiSolidUserPin className='l'/>
-        <h1>class<div className='book'>book</div></h1>
-        </div>
-    </div> */}
+	<header>
+		<div>
+			<div class='Aboutlogo' >
+			<BiSolidUserPin style={{paddingTop: '19px',fontSize:'130px',color: 'rgb(222, 49, 10)'}} />
+			<h1>class</h1><h1 className ='book'>book</h1>
+			</div>
+			<div class='scroldwn'>
+				<p style={{color:'wheat',paddingTop:'250px'}}>Scroll down</p><br/>
+				<RiArrowDownDoubleLine  style={{paddingTop: '-10px',fontSize:'90px',color: 'wheat'}} />
+			</div>
+		</div>
+	</header>
 
-
-
-
-<header>
-	<div>
-   
-        <div class='Aboutlogo' >
-        <BiSolidUserPin style={{paddingTop: '19px',fontSize:'130px',color: 'rgb(222, 49, 10)'}} />
-        <h1>class</h1><h1 className ='book'>book</h1>
-        </div>
-		    <p style={{color:'wheat',paddingTop:'250px'}}>Scroll down</p><br/>
-        
-        <CiCircleChevDown style={{paddingTop: '-10px',fontSize:'90px',color: 'wheat'}} />
-	</div>
-</header>
-
-<main>
-	<ul id="cards">
-		<li class="Aboutcard" id="card_1">
-			<div class="card__content">
+	<main>
+		<ul id="cards">
+			<li class="Aboutcard" id="card_1">
+				<div class="card__content">
 				<div>
 					<h2>Hello Everyone</h2>
-					<p> I am Madhurya Hait from Sikkim Manipal Institute of Technology, Enjoy the developer of this Web App.</p>
+					
+					<p>Allow me to introduce myself. I am <i>Madhurya Hait </i>, a student of age 20 of Jamshedpur, Jharkhand . 
+					With a relentless drive for excellence and an insatiable curiosity for emerging technologies, I have dedicated a lot of time understanding the social media trends & expertise that laid the foundation for the ambitious project I am about to unveil !</p>
 				</div>
 				<figure>
-        <img src= {'https://yt3.googleusercontent.com/RTGS8fej7PVFJjF0cnWKRzzyPQgC9KBYwQZspLZsI5ZlcJcwccxvx42KMHSh_S9mvQa5eZyKTQ=s900-c-k-c0x00ffffff-no-rj'}alt="Canvas Logo"/>
+        		<img src= {img2}alt="Canvas Logo"/>
 					
 				</figure>
 			</div>
@@ -69,11 +63,13 @@ const About = () => {
 			<div class="card__content">
 				<div>
 					<h2>Introducing</h2>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-					<p><a href="#top" class="btn btn--accent">Read more</a></p>
+					<p>the next social media <i>classbook</i>,
+					a groundbreaking website that embodies my passion for designing & has the power to change the entire society. As an entrepreneur and visionary, I embarked on this journey with a clear vision to not just build a website, but to create a digital experience that transcends boundaries and leaves a lasting impact.
+					</p>
+				
 				</div>
 				<figure>
-        <img src= {'https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/library/content/images/size/w1200/2023/10/free-images.jpg'}alt="Canvas Logo"/>
+       			 <img src= {img3}alt="Canvas Logo"/>
 				</figure>
 			</div>
 		</li>
@@ -81,11 +77,12 @@ const About = () => {
 			<div class="card__content">
 				<div>
 					<h2>Qualifications</h2>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-					<p><a href="#top" class="btn btn--accent">Read more</a></p>
+					<p>I'm doing my B-Tech from <i>Sikkim Manipal Institute of Technology</i> & currently studying in 5th semester in the deparetment of<i>Artificial intelligence & Data science.</i> 
+					My fascination with the intersection of data, intelligence & technology was ignited by the profound impact these fields have on shaping the future. I aim on harnessing more skills in the upcoming years. </p>
+			
 				</div>
 				<figure>
-					<img src="https://codyhouse.co/demo-tutorials/stacking-cards/assets/img/img-3.jpg" alt="Image description"/>
+					<img src={img1} alt="Image description"/>
 				</figure>
 			</div>
 		</li>
@@ -93,18 +90,20 @@ const About = () => {
 			<div class="card__content">
 				<div>
 					<h2>Course</h2>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-					<p><a href="#top" class="btn btn--accent">Read more</a></p>
+					<p>I took the <i>'The Complete 2023 Web Development Bootcamp'</i> course by <i>Dr. Angela Yu</i>. Enrolling this was a deliberate decision driven by a desire to acquire hands-on skills, taught by industry experts, the course promised a deep dive into the intricacies of front-end and back-end development, responsive design, and the utilization of popular frameworks. 
+					</p>
 				</div>
 				<figure>
-					<img src="https://codyhouse.co/demo-tutorials/stacking-cards/assets/img/img-2.jpg" alt="Image description"/>
+					<img src={img1} alt="Image description"/>
 				</figure>
 			</div>
 		</li>
 	</ul>
 </main>
 <aside>
-  <p> People cannot be trusted these days whether it be buying items from the shopkeeper choosing a cab driver or getting into a relationship. And present itself nicely to serve present and not nicely to others.
+	<h3><i style={{color:'wheat'}}>Description</i></h3>
+  <p> 
+	People cannot be trusted these days whether it be buying items from the shopkeeper choosing a cab driver or getting into a relationship. And present itself nicely to serve present and not nicely to others.
     If you feel some person is not good enough or is not trustworthy, you can just rate him on this app and can help others to know about him. Currently, this app is only made for the students of Artificial intelligence and data, science of college, Sikkim, Manipal Institute of technology technology.
     It would be expanded further in future & can used by the world.
   </p>
@@ -113,6 +112,7 @@ const About = () => {
     He just needs a look at the person's profile and he can easily check his past. This app can be used by anyone and everyone.
   </p>
   <p>
+  	classbook is not just another addition to the vast expanse of the internet; it is a vision brought to life. It stands as a testament to my commitment to make a better & reliable society .
     This app is the future and can use in every sector of industry and daily life. It's the perspective of many people that make a person good or bad. This app can help to know the person better and can help to make a better decision.
     If a person has Grudges against someone, he can just go through his profile and rate the person. Person can be judged on the basis of his past and can be rated accordingly.
   </p>
@@ -120,6 +120,8 @@ const About = () => {
     So even if some person does not do well in the first impression, he can be judge and on the basis of this app. 
     Let's take an example of a person who is doing well for this community. One can know whether to trust him or not on the basis of this.
   </p>
+
+  <p><p><a href="#top" style={{color:'wheat'}}><FaCircleArrowUp style={{fontSize:'70px'}}/></a></p></p> <br/>
 
 </aside>
   
