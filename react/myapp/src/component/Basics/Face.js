@@ -1,4 +1,4 @@
-import React,{useState} from 'react' ;
+import {useState} from 'react' ;
 import data from "./dataApi.js";
 import NavBarr from './NavBarr.js';
 import LayoutCard from './LayoutCard.jsx';
@@ -11,12 +11,39 @@ export const imag3 ='./images/2.png'
 
 const Face = () => {
 
-  const[studData,setMenuData]=React.useState(data);
+  const[studData,setstudData]=useState(data);
+  const filterItem=(cat)=>{
+    const updatedList =data.filter((curElem) =>{
+      return curElem.sex === cat;
+    });
+    setstudData(updatedList);
+  };
+
+  const filterOthers=()=>{
+    const updatedList =data.filter((curElem) =>{
+      return (curElem.sex !== 'Male' && curElem.sex !== 'Female');
+    });
+    setstudData(updatedList);
+  };
 
   return (
   <>
+  
    <NavBarr/>
-  <LayoutCard studData={data}/>
+ 
+    <nav className="navbar">
+        <div className="btn-group">
+          <button className="btn-group__item" onClick={()=>setstudData(data)}>All</ button>
+          <button className="btn-group__item"onClick={()=>filterItem("Male")} >Male</ button>
+          <button className="btn-group__item" onClick={()=>filterItem("Female")}>Female</ button>
+          <button className="btn-group__item"onClick={()=>filterOthers()}>Others</ button>
+        
+        </div>
+    </nav>
+
+
+
+  <LayoutCard studData={studData}/>
   {/* //Parent to child data passing  */}
   <Footer/>
 
