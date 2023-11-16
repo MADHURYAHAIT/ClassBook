@@ -6,11 +6,11 @@ const LayoutCard= ({studData}) => {
     //console.log(studData);
   return (
     <>
-    <section className='main-card--cointainer '>
+    <section className='main-card--cointainer ' >
     {studData.map((curElem)=>{
         return(
         <>
-            <div className='card-container' key={curElem}>
+            <div className='card-container' key={curElem} style={{animation: "fadeSwipeUp 1s forwards"}}>
             <div className='card'>
                 <div className='card-body'>
                 <div class="imageholder">
@@ -35,11 +35,11 @@ const LayoutCard= ({studData}) => {
                   {/* <div className='card-read'> Photo</div> */}
                   <hr/>
 
-                  <i>Ratings : </i>
-                  <Star stars={curElem.CGPA/2} reviews={34}/>
+                  <i style={{fontSize:'19px',color:'wheat'}}>Ratings : </i><br/>
+                  <div class="roww">Acadamics :  <Star stars={curElem.CGPA/2} /></div>
 
                   <Vote studentId={curElem.No} />
-                  <span className='card-tag subtle'>Rate Me</span>
+                 
                 </div>
             </div>
         </div> 

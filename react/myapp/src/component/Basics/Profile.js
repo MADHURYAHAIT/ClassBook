@@ -47,14 +47,10 @@ const Profile = (Prp) => {
             </div>
         </div>
 
-       
 
-           
-
-      
         <Footer/>
     </div>
   )
 }
 
-export default Profile
+export default Profile;

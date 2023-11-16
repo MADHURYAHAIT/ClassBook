@@ -19,7 +19,7 @@ const Star = ({stars, reviews }) => {
     return (
         <div>
             {/* <div class="star"> */}
-                {ratingStar} {reviews}
+            <pre>{reviews} {ratingStar}</pre>
          
         </div>
 

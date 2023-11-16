@@ -98,12 +98,10 @@ li{
   display: grid;
   grid-template-columns: 4fr;
   
+  /* style={{animation: "fadeSwipeUp 1s forwards"}} */
   /* animation: fadeInOut 2s  alternate; */
 }
-.card{
-  animation: fadeSwipeUp 2s forwards;
 
-}
 .card-container img {
   /* max-width: auto;
   height: 240px; */
@@ -138,9 +136,10 @@ li{
 
 .card {
   color: rgb(154, 155, 156);
+  border-radius: 34px;
   border-width: 1px;
   border-color: #fc1403;
-  background-color: #0f0f0f;
+  background-color: #1b1b1b;
   padding: 30px;
   position: relative;
   box-shadow: 0 0 45px rgba(255, 3, 3, 0.826);
@@ -748,4 +747,45 @@ hr{
   margin: 2px;
   color: rgb(213, 190, 19) !important;
 
+}
+
+/* Votes */
+
+.votes1,.votes2{
+  font-size: 40px;
+  margin-right: 5px;
+  padding-left: 5px;
+
+}
+.votes1{
+  color: #06de18;
+ 
+}
+.votes1:hover{
+  color: rgb(172, 255, 5);
+  scale: 1.07;
+  transition: 0.8s;
+}
+.votes2{
+  color: #df0909;
+}
+.votes2:hover{
+  color: #ff4400;
+  scale: 1.07;
+  transition: 0.8s;
+}
+.votes{
+  background-color: #3c3c3c;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 33%;
+  padding: 6px;
+  padding-right: 5%;
+  border-radius: 20px;
+}
+
+.roww{
+  display: flex;
+  justify-content: space-between;
 }
