@@ -755,19 +755,20 @@ hr{
   font-size: 40px;
   margin-right: 5px;
   padding-left: 5px;
+  color: #9d9d9d;
 
 }
 .votes1{
-  color: #01dc13;
+  /* color: #9d9d9d; */
  
 }
 .votes1:hover{
-  color: rgb(243, 255, 5);
+  color: rgb(159, 255, 5);
   /* scale: 1.05;
   transition: 0.3s; */
 }
 .votes2{
-  color: #e12020;
+  /* color: #e12020; */
 }
 .votes2:hover{
   color: #ff7b00;
@@ -795,9 +796,7 @@ hr{
   background-color: transparent;
 }
 
-/* ... Other media queries based on your design ... */
-
-/* ... Your existing styles ... */
+/* Resposive */
 
 @media screen and (max-width: 1500px) {
   .logo {

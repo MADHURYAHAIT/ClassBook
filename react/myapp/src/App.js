@@ -2,13 +2,15 @@ import React from 'react'
 import Face from './component/Basics/Face'
 import About from './component/Basics/about'
 import Home from './component/Basics/home'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 
 import { Box } from '@mui/material'
 import home from './component/Basics/home'
 import ParticleBackground from './component/Basics/ParticleBackground'
 import { useEffect, useState } from 'react';
 // import { createBrowserRouter } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 
 const DesktopWarning = () => (
   <div>
@@ -70,6 +72,8 @@ const App = () => {
     </div>
   )
 }
+
+
 
 // const App = () => {
 //   return (

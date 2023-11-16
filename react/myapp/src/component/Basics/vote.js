@@ -7,16 +7,21 @@ const Vote = ({ studentId }) => {
   const localStorageKey1 = `Up_${studentId}`;
   const localStorageKey2 = `down_${studentId}`;
   const localStorageFlag = `flag_${studentId}`;
+  const localStorageFollow = `follow_${studentId}`
 
   // localStorage.setItem(`flag_${studentId}`, flg);
   // const[flg,setflg]=useState(false);
 
 
   // State to manage the vote count
-
+  const [follower, increaseFollower] = useState(() => {
+    // Load initial vote count from local storage
+    const storedflw = localStorage.getItem(localStorageFollow);
+    return storedflw ? parseInt(storedflw, 10) : 0;
+  });
   const [flag, setflag] = useState(() => {
     // Load initial vote count from local storage
-    const storedflg = localStorage.getItem(localStorageKey);
+    const storedflg = localStorage.getItem(localStorageFlag);
     return storedflg ? parseInt(storedflg, 10) : 0;
   });
 
@@ -37,7 +42,11 @@ const Vote = ({ studentId }) => {
     return storedVotes2 ? parseInt(storedVotes2, 10) : 0;
   });
 
+
   // Effect to update local storage when the vote count changes
+  useEffect(() => {
+    localStorage.setItem(localStorageFollow, follower.toString());
+  }, [follower, localStorageFlag]);
   useEffect(() => {
     localStorage.setItem(localStorageKey, votes.toString());
   }, [votes, localStorageKey]);
@@ -53,28 +62,32 @@ const Vote = ({ studentId }) => {
 
 
   const handleUpvote = () => {
-    if (flag===0){
+    if (flag<=2){
     setVotes(votes + 1);
     setUp(Up+1);
-     setflag(1)   }
+     setflag(flag+1);   }
 
   };
 
   const handleDownvote = () => {
-    if (flag===0){
+    if (flag<=2){   
     setVotes(votes + 1);
     setDown(down+1);
-    setflag(1);
+    setflag(flag+1);
     }
     };
 
-
-
+    const follow=()=>{
+      increaseFollower(follower+1);
+    }
+    
   return (
     <div>
       {/* <h2>Student ID: {studentId}</h2> */}
         <div class="roww"> Person : <Star stars={Up/down} reviews={votes}/>
       {/* Vote Count: {votes} */}
+      </div>
+      <div class="roww" style={{fontSize:'20px',color:'white'}}>  Stalkers : {follower}
       </div>
         <br/>
         <div class="roww">
@@ -82,7 +95,7 @@ const Vote = ({ studentId }) => {
                 <TbArrowBigUp className="votes1"  onClick={handleUpvote}/> {Up}
                 <TbArrowBigDown className="votes2" onClick={handleDownvote}/>{down}
             </div>
-        <span className='card-tag subtle'>Rate Me</span>
+          <span className='card-tag subtle' onClick={follow}>Stalk Me</span>
         </div>
 
       {/* <button onClick={handleUpvote}>Upvote</button> */}
