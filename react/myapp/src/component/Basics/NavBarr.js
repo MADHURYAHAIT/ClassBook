@@ -33,9 +33,9 @@ export default function NavBarr ()  {
 
         <div className='abc'>
         
-          <li><CustomLink className="nav-option"  href="/home">profile</CustomLink></li>
-          <li><CustomLink  className="nav-option" href="/students">students</CustomLink></li>
-          <li><CustomLink className="nav-option" href="/about">about </CustomLink></li>
+          <li><CustomLink className="nav-option"  href="/home">Profile</CustomLink></li>
+          <li><CustomLink  className="nav-option" href="/students">Class</CustomLink></li>
+          <li><CustomLink className="nav-option" href="/about">About </CustomLink></li>
           <li><CustomLink className="nav-option" href="/logout"><LogoutButton/> </CustomLink></li>
         </div>
         

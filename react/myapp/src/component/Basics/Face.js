@@ -8,7 +8,6 @@ export const imag = './images/imgg.png'
 export const imag2 = './images/1.jpg'
 export const imag3 ='./images/2.png'
 
-
 const Face = () => {
 
   const[studData,setstudData]=useState(Data);

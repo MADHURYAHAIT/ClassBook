@@ -62,7 +62,7 @@ const Vote = ({ studentId }) => {
 
 
   const handleUpvote = () => {
-    if (flag<=2){
+    if (flag<=4){
     setVotes(votes + 1);
     setUp(Up+1);
      setflag(flag+1);   }
@@ -70,7 +70,7 @@ const Vote = ({ studentId }) => {
   };
 
   const handleDownvote = () => {
-    if (flag<=2){   
+    if (flag<=1){   
     setVotes(votes + 1);
     setDown(down+1);
     setflag(flag+1);
@@ -83,11 +83,11 @@ const Vote = ({ studentId }) => {
     
   return (
     <div>
-      {/* <h2>Student ID: {studentId}</h2> */}
-        <div class="roww"> Person : <Star stars={Up/down} reviews={votes}/>
+      <h2>Student ID: {studentId}</h2>
+        <div class="roww"> Person : <Star stars={((Up*5))/votes} reviews={votes}/>
       {/* Vote Count: {votes} */}
       </div>
-      <div class="roww" style={{fontSize:'20px',color:'white'}}>  Stalkers : {follower}
+      <div class="roww" style={{fontSize:'20px',color:'red'}}>  Stalkers : {follower}
       </div>
         <br/>
         <div class="roww">
