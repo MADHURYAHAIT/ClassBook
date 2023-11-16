@@ -11,7 +11,7 @@ import { useEffect, useState } from 'react';
 // import { createBrowserRouter } from 'react-router-dom'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-
+#chu
 const DesktopWarning = () => (
   <div>
     <h1 style={{justifyContent:'center' ,paddingTop:'50%',textAlign:'center'}}>Please view in desktop</h1>
