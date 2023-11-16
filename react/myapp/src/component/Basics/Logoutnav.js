@@ -7,7 +7,7 @@ function Logoutnav(){
 
     const onSuccess=(res)=>{
         console.log("Log Out Successfully!",res);
-        window.location.reload();
+        // window.location.reload();
     }
 
     return(

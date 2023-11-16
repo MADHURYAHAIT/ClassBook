@@ -30,14 +30,13 @@ const Face = () => {
   <div class="face">
   
     <NavBarr/>
-    
+
     <nav className="navbar">
         <div className="btn-group">
           <button className="btn-group__item" onClick={()=>setstudData(Data)}>All</ button>
           <button className="btn-group__item"onClick={()=>filterItem("Male")} >Male</ button>
           <button className="btn-group__item" onClick={()=>filterItem("Female")}>Female</ button>
           <button className="btn-group__item"onClick={()=>filterOthers()}>Others</ button>
-        
         </div>
     </nav>
 

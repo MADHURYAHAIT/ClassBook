@@ -6,11 +6,14 @@ const Vote = ({ studentId }) => {
   const localStorageKey = `votes_${studentId}`;
   const localStorageKey1 = `Up_${studentId}`;
   const localStorageKey2 = `down_${studentId}`;
- 
 //   const [Up,setUp]=useState(0);
 //   const [down,setDown]=useState(0);
 
   // State to manage the vote count
+  const[flg,setflg]=useState(false);
+  localStorage.setItem(`flag_${studentId}`, flg);
+
+  
   const [votes, setVotes] = useState(() => {
     // Load initial vote count from local storage
     const storedVotes = localStorage.getItem(localStorageKey);
@@ -41,13 +44,19 @@ const Vote = ({ studentId }) => {
 
 
   const handleUpvote = () => {
+    if (flg===false){
     setVotes(votes + 1);
     setUp(Up+1);
+     setflg(true)   }
+
   };
 
   const handleDownvote = () => {
+    if (flg===false){
     setVotes(votes + 1);
     setDown(down+1);
+    setflg(true);
+    }
     };
 
 
@@ -61,7 +70,7 @@ const Vote = ({ studentId }) => {
         <br/>
         <div class="roww">
             <div class="votes">
-                <TbArrowBigUp className="votes1" onClick={handleUpvote}/> {Up}
+                <TbArrowBigUp className="votes1"  onClick={handleUpvote}/> {Up}
                 <TbArrowBigDown className="votes2" onClick={handleDownvote}/>{down}
             </div>
         <span className='card-tag subtle'>Rate Me</span>

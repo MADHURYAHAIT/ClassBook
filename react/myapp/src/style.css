@@ -126,7 +126,7 @@ li{
       
 }
 .card h2{
-      width: 380px; /* Adjust the width as needed */
+      width: 370px; /* Adjust the width as needed */
       white-space: nowrap;
       font-size: 45px;
       overflow: hidden;
@@ -758,21 +758,22 @@ hr{
 
 }
 .votes1{
-  color: #06de18;
+  color: #01dc13;
  
 }
 .votes1:hover{
-  color: rgb(172, 255, 5);
-  scale: 1.07;
-  transition: 0.8s;
+  color: rgb(243, 255, 5);
+  /* scale: 1.05;
+  transition: 0.3s; */
 }
 .votes2{
-  color: #df0909;
+  color: #e12020;
 }
 .votes2:hover{
-  color: #ff4400;
-  scale: 1.07;
-  transition: 0.8s;
+  color: #ff7b00;
+  /* scale: 1.05;
+  border-radius: 50%;
+  transition: 0.3s; */
 }
 .votes{
   background-color: #3c3c3c;

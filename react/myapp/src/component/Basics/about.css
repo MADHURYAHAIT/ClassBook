@@ -49,7 +49,7 @@
 
 @supports (animation-timeline: works) {
 
-	@scroll-timeline cards-element-scrolls-in-body {
+		@scroll-timeline cards-element-scrolls-in-body {
 		source: selector(body);
 		scroll-offsets:
 			/* Start when the start edge touches the top of the scrollport */
