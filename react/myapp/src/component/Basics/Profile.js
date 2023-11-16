@@ -4,7 +4,6 @@ import NavBarr from './NavBarr'
 import Footer from './Footer'
 import GoogleLogout from './logout'
 
-const clientId="36910271547-g4gf1pe3a3ln92sfmj6n293s5k3vfnrp.apps.googleusercontent.com";
 
 
 
@@ -12,6 +11,10 @@ const Profile = (Prp) => {
  
         const url=Prp.profData.imageUrl;
         const[Img,seturl]=useState(url);
+        const getImg=()=>{
+            seturl(Prp.profData.imageUrl);
+            return(Img)
+        }
    
     
   return (
@@ -35,6 +38,7 @@ const Profile = (Prp) => {
                     <h1 className='book'>{Prp.profData.givenName}</h1>
                     <h5 style={{color:'white'}}>Profile</h5><br/>
                     {/* <img href={Img}/> */}
+                   
                     <img src={Img} alt={Prp.profData.name}/>
                     <hr/>
                     User Name :  <i style={{color:'white'}}>{Prp.profData.name}</i><br/>
@@ -46,8 +50,6 @@ const Profile = (Prp) => {
                 </div>
             </div>
         </div>
-
-
         <Footer/>
     </div>
   )

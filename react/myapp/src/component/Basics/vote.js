@@ -6,14 +6,20 @@ const Vote = ({ studentId }) => {
   const localStorageKey = `votes_${studentId}`;
   const localStorageKey1 = `Up_${studentId}`;
   const localStorageKey2 = `down_${studentId}`;
-//   const [Up,setUp]=useState(0);
-//   const [down,setDown]=useState(0);
+  const localStorageFlag = `flag_${studentId}`;
+
+  // localStorage.setItem(`flag_${studentId}`, flg);
+  // const[flg,setflg]=useState(false);
+
 
   // State to manage the vote count
-  const[flg,setflg]=useState(false);
-  localStorage.setItem(`flag_${studentId}`, flg);
 
-  
+  const [flag, setflag] = useState(() => {
+    // Load initial vote count from local storage
+    const storedflg = localStorage.getItem(localStorageKey);
+    return storedflg ? parseInt(storedflg, 10) : 0;
+  });
+
   const [votes, setVotes] = useState(() => {
     // Load initial vote count from local storage
     const storedVotes = localStorage.getItem(localStorageKey);
@@ -36,6 +42,9 @@ const Vote = ({ studentId }) => {
     localStorage.setItem(localStorageKey, votes.toString());
   }, [votes, localStorageKey]);
   useEffect(() => {
+    localStorage.setItem(localStorageFlag, flag.toString());
+  }, [flag, localStorageFlag]);
+  useEffect(() => {
     localStorage.setItem(localStorageKey1, Up.toString());
   }, [Up, localStorageKey1]);
   useEffect(() => {
@@ -44,18 +53,18 @@ const Vote = ({ studentId }) => {
 
 
   const handleUpvote = () => {
-    if (flg===false){
+    if (flag===0){
     setVotes(votes + 1);
     setUp(Up+1);
-     setflg(true)   }
+     setflag(1)   }
 
   };
 
   const handleDownvote = () => {
-    if (flg===false){
+    if (flag===0){
     setVotes(votes + 1);
     setDown(down+1);
-    setflg(true);
+    setflag(1);
     }
     };
 

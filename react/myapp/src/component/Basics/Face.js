@@ -41,9 +41,11 @@ const Face = () => {
     </nav>
 
 
+    <div class="StudentFaces">
 
-  <LayoutCard studData={studData}/>
+    <LayoutCard studData={studData}/>
   {/* //Parent to child data passing  */}
+    </div>
   <br/><br/>
   <Footer/>
 

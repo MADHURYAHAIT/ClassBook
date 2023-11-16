@@ -10,7 +10,7 @@ const LayoutCard= ({studData}) => {
     {studData.map((curElem)=>{
         return(
         <>
-            <div className='card-container' key={curElem} style={{animation: "fadeSwipeUp 1s forwards"}}>
+            <div className='card-container' key={curElem}>
             <div className='card'>
                 <div className='card-body'>
                 <div class="imageholder">

@@ -68,7 +68,7 @@ li{
 
 .main-card--cointainer {
   display: grid;
-  transform: translateY(2%);
+  /* transform: translateY(6%); */
   grid-template-columns: repeat(3, minmax(460px, 460px));
   grid-gap: 0.5rem;
   padding: 6px;
@@ -99,7 +99,7 @@ li{
   grid-template-columns: 4fr;
   
   /* style={{animation: "fadeSwipeUp 1s forwards"}} */
-  /* animation: fadeInOut 2s  alternate; */
+   animation: fadeInOut 0.3s  alternate; 
 }
 
 .card-container img {
@@ -294,11 +294,11 @@ a {
 }
 
 
-
 @media screen and (max-width: 900px) {
   .category-btn{
     margin: 10px;
   }
+
 }
 
 @media screen and (max-width:800px){
@@ -789,4 +789,90 @@ hr{
 .roww{
   display: flex;
   justify-content: space-between;
+}
+
+* {
+  background-color: transparent;
+}
+
+/* ... Other media queries based on your design ... */
+
+/* ... Your existing styles ... */
+
+@media screen and (max-width: 1500px) {
+  .logo {
+    margin: 10px;
+  }
+
+  .card h2 {
+    width: 330px;
+  }
+  .card{
+    width:430px
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .category-btn {
+    margin: 10px;
+  }
+  .containerlogo{
+    display: block;
+    visibility: hidden;
+  }
+  .front-profile{
+    transform: translate(-35%,10%);
+  }
+
+.main-card--cointainer {
+  /* transform: translateY(6%); */
+  grid-template-columns: repeat(2, minmax(380px, 460px));
+  }
+
+}
+
+@media screen and (max-width: 900px) {
+  .copyright {
+    display: none !important;
+  }
+  .main-card--cointainer {
+    /* transform: translateY(6%); */
+    grid-template-columns: repeat(1, minmax(380px, 460px));
+    }
+}
+
+@media screen and (max-width: 820px) {
+  .scroll-horizontal {
+    overflow: auto !important;
+  }
+
+  .react-player {
+    height: 45vh !important;
+  }
+  .navbar{
+    display: none;
+  }
+
+  .nav-option{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    height: 300px;
+    width: 100%;
+    background-color: #333;
+    text-align: center;
+  }
+  .abc{
+    height: 80px;
+  }
+  .search-bar {
+    width: 200px;
+  }
+  .main-card--cointainer {
+    /* transform: translateY(6%); */
+    grid-template-columns: repeat(1, minmax(300px, 460px));
+    }
+
 }

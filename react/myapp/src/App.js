@@ -7,11 +7,29 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Box } from '@mui/material'
 import home from './component/Basics/home'
 import ParticleBackground from './component/Basics/ParticleBackground'
-
+import { useEffect, useState } from 'react';
 // import { createBrowserRouter } from 'react-router-dom'
 
+const DesktopWarning = () => (
+  <div>
+    <h1 style={{justifyContent:'center' ,paddingTop:'50%',textAlign:'center'}}>Please view in desktop</h1>
+  </div>
+);
 
 const App = () => {
+  const [isDesktop, setIsDesktop] = useState(window.innerWidth > 500);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsDesktop(window.innerWidth > 700);
+    };
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   let Current
   switch (window.location.pathname) {
     case "/":
@@ -32,10 +50,23 @@ const App = () => {
   };
   return (
     <div>
-      <ParticleBackground/>
-    <Box sx={{backgroundColor:'#1111'}}>
-    </Box>
-      <Current/>
+      {isDesktop ? (
+        // Render your desktop content here
+        <div>
+           <ParticleBackground/>
+          <Box sx={{backgroundColor:'#1111'}}>
+          </Box>
+          <Current/>
+        </div>
+      ) : (
+        // Render the warning for screens less than or equal to 500px
+        <DesktopWarning />
+      )}
+
+
+
+
+     
     </div>
   )
 }
