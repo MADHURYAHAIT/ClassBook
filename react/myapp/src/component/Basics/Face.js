@@ -3,9 +3,9 @@ import React from 'react'
 import {useState} from 'react' ;
 import Data from "./dataApi.js";
 import NavBarr from './NavBarr.js';
-import LayoutCard2 from './LayoutCard2.jsx';
+import LayoutCard2 from './LayoutCard2.js';
 import Footer from './Footer.js';
-import './Face.css'
+import './Class.css'
 
 export const imag = './images/imgg.png'
 export const imag2 = './images/1.jpg'
@@ -52,11 +52,7 @@ const Face = () => {
 
   {/* //Parent to child data passing  */}
     </div>
-  <br/><br/>
-  <Footer/>
-
-
-  <div class="wrapper">
+    <div class="wrapper">
   <h1>Parallax Flipping Cards</h1>
   <div class="cols">
 			<div class="col" ontouchstart="this.classList.toggle('hover');">
@@ -182,6 +178,22 @@ const Face = () => {
 		</div>
  </div>
 
+
+
+
+
+
+
+
+
+
+
+
+  <br/><br/>
+  <Footer/>
+
+
+ 
 
 
 

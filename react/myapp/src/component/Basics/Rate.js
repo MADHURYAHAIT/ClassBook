@@ -13,7 +13,7 @@
 import {useState} from 'react' ;
 import Data from "./dataApi.js";
 import NavBarr from './NavBarr.js';
-import LayoutCard from './LayoutCard.jsx';
+import LayoutCard from './LayoutCard.js';
 import Footer from './Footer.js';
 
 export const imag = './images/imgg.png'
