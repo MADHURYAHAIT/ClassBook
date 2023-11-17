@@ -44,7 +44,6 @@ li{
   color: #ffffff !important;
 }
 .Navactive a{
- 
   font-size: 25px;
   background-color: black;
   color:  #ff5d30 !important; 
@@ -68,9 +67,19 @@ li{
 
 .main-card--cointainer {
   display: grid;
-  /* transform: translateY(6%); */
+  transform: translateY(1.9%);
   grid-template-columns: repeat(3, minmax(460px, 460px));
   grid-gap: 0.5rem;
+
+  justify-content: space-around;
+ 
+}
+
+.main-card--cointainer2 {
+  display: grid;
+  /* transform: translateY(6%); */
+  grid-template-columns: repeat(4, minmax(350px, 450px));
+  grid-gap: 2.5rem;
   padding: 6px;
   justify-content: space-around;
  
@@ -97,10 +106,20 @@ li{
   position: relative;
   display: grid;
   grid-template-columns: 4fr;
+   /* animation: fadeInOut 0.3s  alternate;  */
+   animation: fadeSwipeUp 2.5s forwards; 
+}
+
+.card-container2{
+  margin: 55px auto 0;
+  position: relative;
+  display: grid;
+  grid-template-columns: 4fr;
   
   /* style={{animation: "fadeSwipeUp 1s forwards"}} */
-   animation: fadeInOut 0.3s  alternate; 
+   animation: fadeSwipeUp 2s forwards; 
 }
+
 
 .card-container img {
   /* max-width: auto;
@@ -128,9 +147,9 @@ li{
 .card h2{
       width: 370px; /* Adjust the width as needed */
       white-space: nowrap;
-      font-size: 45px;
-      overflow: hidden;
-      text-overflow: ellipsis;
+    font-size: 45px;
+    overflow: hidden;
+    text-overflow: ellipsis;
     
 }
 
@@ -138,10 +157,10 @@ li{
   color: rgb(154, 155, 156);
   border-radius: 34px;
   border-width: 1px;
-  border-color: #fc1403;
   background-color: #1b1b1b;
   padding: 30px;
   position: relative;
+  border-color: #fc1403;
   box-shadow: 0 0 45px rgba(255, 3, 3, 0.826);
   z-index: 1;
 }
@@ -745,7 +764,7 @@ hr{
 .Staricon{
  font-size: 22px;
   margin: 2px;
-  color: rgb(255, 225, 0) !important;
+  color: rgb(213, 190, 19) !important;
 
 }
 
