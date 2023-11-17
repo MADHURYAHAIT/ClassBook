@@ -2,6 +2,7 @@ import React from 'react'
 import Face from './component/Basics/Face'
 import About from './component/Basics/about'
 import Home from './component/Basics/home'
+import Rate from './component/Basics/Rate'
 
 
 import { Box } from '@mui/material'
@@ -42,6 +43,9 @@ const App = () => {
       break
     case "/students":
       Current =Face
+      break
+    case "/rate":
+      Current =Rate
       break
     case "/about":
       Current=About

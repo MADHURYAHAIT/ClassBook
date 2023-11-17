@@ -2,15 +2,15 @@ import React from 'react'
 import Star from './Star'
 import Vote from './vote'
 
-const LayoutCard= ({studData},{Nvv}) => {
-   console.log(Nvv);
+const LayoutCard= ({studData}) => {
+   
     // console.log(studData);
   return (
     <>
+
     <section className='main-card--cointainer ' >
     {studData.map((curElem)=>{
         return(
-          
         <>
             <div className='card-container' key={curElem}>
             <div className='card'>
@@ -40,17 +40,18 @@ const LayoutCard= ({studData},{Nvv}) => {
                   <i style={{fontSize:'19px',color:'wheat'}}>Ratings : </i><br/>
                   <div class="roww">Acadamics :  <Star stars={curElem.CGPA/2} /></div>
                   
-                  <Vote studentId={curElem.No} Nv={Nv} />
+                  <Vote studentId={curElem.No}/>
                 </div>
             </div>
         </div> 
+       
     </>
         )
     })}
     </section>
     
-
-      
+ 
+    
     </>
   )
 }

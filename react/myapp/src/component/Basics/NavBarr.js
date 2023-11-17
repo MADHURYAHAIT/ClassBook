@@ -1,13 +1,8 @@
 import React from 'react'
 import { Stack } from '@mui/material'
-
-import { FaRegCircleUser } from 'react-icons/fa6'
-import {FiLogOut} from 'react-icons/fi'
 import LogoutButton from './Logoutnav'
 import {BiSolidUserPin} from 'react-icons/bi'
-import{PiStudentFill} from 'react-icons/pi'
-import {ImInfo} from 'react-icons/im'
-import { useState } from 'react'
+
 
 export const logo ='./logo/1.png'
 
@@ -35,6 +30,7 @@ export default function NavBarr ()  {
         
           <li><CustomLink className="nav-option"  href="/home">Profile</CustomLink></li>
           <li><CustomLink  className="nav-option" href="/students">Class</CustomLink></li>
+          <li><CustomLink  className="nav-option" href="/rate">Rate</CustomLink></li>
           <li><CustomLink className="nav-option" href="/about">About </CustomLink></li>
           <li><CustomLink className="nav-option" href="/logout"><LogoutButton/> </CustomLink></li>
         </div>
