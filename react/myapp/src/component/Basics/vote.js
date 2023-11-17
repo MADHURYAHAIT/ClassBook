@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { TbArrowBigDown ,TbArrowBigUp} from "react-icons/tb";
 import Star from './Star';
-const Vote = ({ studentId }) => {
+const Vote = ({ studentId },{Nav}) => {
+
   // Use local storage key specific to each student
   const localStorageKey = `votes_${studentId}`;
   const localStorageKey1 = `Up_${studentId}`;
   const localStorageKey2 = `down_${studentId}`;
   const localStorageFlag = `flag_${studentId}`;
-  const localStorageFollow = `follow_${studentId}`
+  const localStorageFollow = `follow_${studentId}`;
 
   // localStorage.setItem(`flag_${studentId}`, flg);
   // const[flg,setflg]=useState(false);
@@ -62,7 +63,7 @@ const Vote = ({ studentId }) => {
 
 
   const handleUpvote = () => {
-    if (flag<=4){
+    if (flag<=0){
     setVotes(votes + 1);
     setUp(Up+1);
      setflag(flag+1);   }
@@ -70,7 +71,7 @@ const Vote = ({ studentId }) => {
   };
 
   const handleDownvote = () => {
-    if (flag<=1){   
+    if (flag<=0){   
     setVotes(votes + 1);
     setDown(down+1);
     setflag(flag+1);
@@ -80,10 +81,11 @@ const Vote = ({ studentId }) => {
     const follow=()=>{
       increaseFollower(follower+1);
     }
-    
+  // if (Nav===1){
   return (
     <div>
-      <h2>Student ID: {studentId}</h2>
+    
+      {/* <h2>Student ID: {studentId}</h2> */}
         <div class="roww"> Person : <Star stars={((Up*5))/votes} reviews={votes}/>
       {/* Vote Count: {votes} */}
       </div>
@@ -95,11 +97,8 @@ const Vote = ({ studentId }) => {
                 <TbArrowBigUp className="votes1"  onClick={handleUpvote}/> {Up}
                 <TbArrowBigDown className="votes2" onClick={handleDownvote}/>{down}
             </div>
-          <span className='card-tag subtle' onClick={follow}>Stalk Me</span>
+            <span className='card-tag subtle' onClick={follow}>Stalk Me</span>
         </div>
-
-      {/* <button onClick={handleUpvote}>Upvote</button> */}
-      {/* <button onClick={handleDownvote}>Downvote</button> */}
     </div>
   );
 };
