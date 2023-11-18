@@ -1,6 +1,4 @@
 import React from 'react'
-import Star from './Star'
-import Vote from './vote'
 
 const LayoutCard= ({studData}) => {
    
@@ -18,7 +16,7 @@ const LayoutCard= ({studData}) => {
 
 
                 <div class="col" ontouchstart="this.classList.toggle('hover');">
-                  <div class="container">
+                  <div class="Classcontainer">
 
                     <div class="front" style={{backgroundImage: `url(${curElem.image})`}}>
                       <div class="inner">
@@ -40,35 +38,16 @@ const LayoutCard= ({studData}) => {
                         </span>
                         </p>
                       </div>
-                    </div>
-                    
+                    </div> 
                   </div>
                 </div>
-
-
-
-
-
-
-
-              
             </div>
-
-
-
-
-                 
-            </div>
-      
-       
-    </>
-        )
+          </div>
+        </>
+      )
     })}
-    </section>
-    
- 
-    
-    </>
+  </section>
+  </>
   )
 }
 

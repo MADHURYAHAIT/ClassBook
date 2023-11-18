@@ -45,16 +45,17 @@ const Face = () => {
         </div>
     </nav>
 
+
     <div class="StudentFaces" style={{Animation:"fadeSwipeUp 1s forwards"}}>
 
 
+      <h6 style={{color:"wheat",paddingTop:'3%', justifyContent:'center',textAlign:'center'}} >Hover on a card to see details</h6>
     <div class="wrapper">
   
     <LayoutCard2 studData={studData}  />
     </div>
 
 
-  {/* //Parent to child data passing  */}
     </div>
      
 

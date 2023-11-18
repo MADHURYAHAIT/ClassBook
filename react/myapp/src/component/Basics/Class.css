@@ -1,8 +1,9 @@
 
 .wrapper{
     width: 90%;
-    margin: 150px auto;
-    height: auto;
+    margin: 0px auto;
+    padding-top: 80px;
+    min-height: 100vh;
     max-width: 80rem;
   }
 
@@ -24,13 +25,15 @@
     height: 240px;
   }
   
-  .container{
+  .Classcontainer{
     -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
       -webkit-perspective: 1000px;
               perspective: 1000px;
+    
   }
   
+
   .front,
   .back{
     background-size: cover;
@@ -76,8 +79,8 @@
               backface-visibility: hidden;
       border-radius: 30px;
   }
-  .container:hover .front,
-  .container:hover .back{
+  .Classcontainer:hover .front,
+  .Classcontainer:hover .back{
       -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
       transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
       -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
@@ -108,28 +111,28 @@
       z-index: 2;
   }
   
-  .container .back{
+  .Classcontainer .back{
       -webkit-transform: rotateY(180deg);
               transform: rotateY(180deg);
       -webkit-transform-style: preserve-3d;
               transform-style: preserve-3d;
   }
   
-  .container .front{
+  .Classcontainer .front{
       -webkit-transform: rotateY(0deg);
               transform: rotateY(0deg);
       -webkit-transform-style: preserve-3d;
               transform-style: preserve-3d;
   }
   
-  .container:hover .back{
+  .Classcontainer:hover .back{
     -webkit-transform: rotateY(0deg);
             transform: rotateY(0deg);
     -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
   }
   
-  .container:hover .front{
+  .Classcontainer:hover .front{
     -webkit-transform: rotateY(-180deg);
             transform: rotateY(-180deg);
     -webkit-transform-style: preserve-3d;
@@ -162,10 +165,26 @@
     font-size: 18px;
 }
 
-@media screen and (max-width: 64rem){
+@media screen and (max-width: 1550px){
     .main-card--cointainer2 {
         grid-template-columns: repeat(3, minmax(350px, 450px));
     }
+}
+
+@media screen and (max-width: 1180px){
+    .main-card--cointainer2 {
+        grid-template-columns: repeat(2, minmax(350px, 450px));
+    }
+}
+
+@media screen and (max-width: 800px){
+    .main-card--cointainer2 {
+        grid-template-columns: repeat(1, minmax(350px, 450px));
+    }
+}
+
+@media screen and (max-width: 64rem){
+   
     .col{
       width: calc(33.333333% - 2rem);
     }
@@ -183,3 +202,5 @@
       margin: 0 0 2rem 0;
     }
   }
+
+
