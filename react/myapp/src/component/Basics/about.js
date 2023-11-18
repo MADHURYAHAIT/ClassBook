@@ -2,7 +2,7 @@ import React from 'react'
 import NavBarr from './NavBarr'
 import Footer from './Footer'
 import './about.css'
-
+import Home from './home.js'
 import img1 from '../../imgs/certificate.jpg'
 import img2 from '../../imgs/me.jpg'
 import img3 from '../../imgs/b.png'
@@ -21,8 +21,8 @@ const About = () => {
 
   // useEffect(() => {
   // }, []);
-
-
+  const User = localStorage.getItem('User');
+  if (User!='None'){
 	return (
     <div className='About'>
 
@@ -132,6 +132,14 @@ const About = () => {
  
  
   )
+}
+else{
+  return(
+    <>
+    <Home/>
+    </>
+  )
+}
 }
 
 export default About

@@ -8,6 +8,7 @@ function Logoutnav(){
     const onSuccess=(res)=>{
         console.log("Log Out Successfully!",res);
         // window.location.reload();
+        localStorage.setItem('User', 'None');
     }
 
     return(

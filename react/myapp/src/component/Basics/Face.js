@@ -6,6 +6,7 @@ import NavBarr from './NavBarr.js';
 import LayoutCard2 from './LayoutCard2.js';
 import Footer from './Footer.js';
 import './Class.css'
+import Home from './home.js';
 
 export const imag = './images/imgg.png'
 export const imag2 = './images/1.jpg'
@@ -13,7 +14,7 @@ export const imag3 ='./images/2.png'
 
 const Face = () => {
 
-
+  const User = localStorage.getItem('User');
   const[studData,setstudData]=useState(Data);
   const filterItem=(cat)=>{
     const updatedList =Data.filter((curElem) =>{
@@ -25,12 +26,14 @@ const Face = () => {
 
   const filterOthers=()=>{
     const updatedList =Data.filter((curElem) =>{
-
       return (curElem.sex !== 'Male' && curElem.sex !== 'Female');
     });
     setstudData(updatedList);
   };
 
+
+
+  if (User!='None'){
   return (
   <div class="face">
   
@@ -57,46 +60,21 @@ const Face = () => {
 
 
     </div>
-     
-
-
-
-
-
-
-
-
-
-
-
-
   <br/>
   <Footer/>
-
-
- 
-
-
-
-
-
-
-
-
-
 </div>
 
 
-
-
-
-
-
-
-
-
-
   )
+
+  }
+  else{
+    return(
+      <>
+      <Home/>
+      </>
+    )
+  }
   
 }
 

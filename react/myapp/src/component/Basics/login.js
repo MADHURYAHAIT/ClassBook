@@ -4,7 +4,8 @@ const clientId="36910271547-g4gf1pe3a3ln92sfmj6n293s5k3vfnrp.apps.googleusercont
 
 function Login(){
     const onSuccess = (res) => {
-        console.log("LOGIN SUCCESS! Current user: ",res.profileObj);
+  
+        console.log(res.profileObj.googleId)
     }
     
     const onFailure=(res)=>{

@@ -15,17 +15,23 @@ export const logo2 ='./logo/google.png'
 
 const clientId="36910271547-g4gf1pe3a3ln92sfmj6n293s5k3vfnrp.apps.googleusercontent.com";
 const Home = () => {
+  
   const[UserData,setData]=useState('f')
   const[flag,setFlag]=useState(true);
-    const onSuccess = (res) => {
+
+  const onSuccess = (res) => {
       console.log("LOGIN SUCCESS! Current user: ",res.profileObj);
       setData(res.profileObj);
+      console.log(res.profileObj.googleId)
       setFlag(false);
-
+      localStorage.setItem('User', res.profileObj.googleId.toString());
   }
+
   const onFailure=(res)=>{
       console.log("LOGIN FAILED! res: ",res);
       setFlag(true);
+      localStorage.setItem('User', 'None');
+
   } 
   useEffect(()=>{
      function start(){

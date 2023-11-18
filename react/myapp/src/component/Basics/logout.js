@@ -7,6 +7,7 @@ function Logout(){
 
     const onSuccess=(res)=>{
         console.log("Log Out Successfully!",res);
+        localStorage.setItem('User', 'None');
         window.location.reload();
     }
 
