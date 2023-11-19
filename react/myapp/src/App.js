@@ -41,7 +41,7 @@ const App = () => {
     case "/logout":
       Current =Home
       break
-    case "/students":
+    case "/class":
       Current =Face
       break
     case "/rate":
