@@ -17,12 +17,7 @@ const Rate = () => {
   <div class="face">
   
     <NavBarr/>
-
-
-
     <div class="StudentFaces">
-
-
     <LayoutCard studData={studData}/>
 
   {/* //Parent to child data passing  */}

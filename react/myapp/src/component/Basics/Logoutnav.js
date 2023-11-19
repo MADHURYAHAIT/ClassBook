@@ -10,7 +10,6 @@ function Logoutnav(){
         // window.location.reload();
         localStorage.setItem('User', 'None');
     }
-
     return(
         <div id="signOutButton">
             <GoogleLogout
@@ -18,12 +17,8 @@ function Logoutnav(){
             onLogoutSuccess={onSuccess}
             isSignedIn={false}
             icon={false}
-            // redirect='./home'
-
             />
-
                 <IoIosLogOut className='icon'/>
-
         </div>
     )
 }
