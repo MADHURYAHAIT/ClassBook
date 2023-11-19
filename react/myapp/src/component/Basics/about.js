@@ -11,9 +11,6 @@ import {BiSolidUserPin} from 'react-icons/bi'
 import { RiArrowDownDoubleLine } from "react-icons/ri";
 import { FaCircleArrowUp } from "react-icons/fa6";
 
-// import 'jquery-ui-dist/jquery-ui'
-// import 'jquery-ui-bundle';
-// import 'jquery-ui-bundle/jquery-ui.min.css';
 
 
 
