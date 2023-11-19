@@ -15,16 +15,12 @@ const Rate = () => {
   if (User!='None'){
   return (
   <div class="face">
-  
     <NavBarr/>
     <div class="StudentFaces">
-    <LayoutCard studData={studData}/>
-
-  {/* //Parent to child data passing  */}
+        <LayoutCard studData={studData}/>             {/* //Parent to child data passing  */}
     </div>
-  <br/><br/>
-  <Footer/>
-
+    <br/><br/>
+    <Footer/>
 </div>
   )
 }

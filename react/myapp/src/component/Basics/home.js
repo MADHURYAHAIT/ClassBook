@@ -82,7 +82,7 @@ const Home = () => {
                             </div>  
                         </div>
         </div>
-        <h6 style={{color:"wheat", marginRight:'-42%'}} >Hover above to Login</h6>
+        <h6 style={{color:"wheat", marginRight:'-42%'}}>Hover above to Login</h6>
     </div>
   <Footer/>
 
