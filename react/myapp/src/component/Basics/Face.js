@@ -31,8 +31,6 @@ const Face = () => {
     setstudData(updatedList);
   };
 
-
-
   if (User!='None'){
   return (
   <div class="face">
