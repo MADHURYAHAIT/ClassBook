@@ -31,7 +31,6 @@ const Home = () => {
       console.log("LOGIN FAILED! res: ",res);
       setFlag(true);
       localStorage.setItem('User', 'None');
-
   } 
   useEffect(()=>{
      function start(){
