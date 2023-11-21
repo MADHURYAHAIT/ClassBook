@@ -2,7 +2,7 @@ import React from 'react'
 import {BiSolidUserPin} from 'react-icons/bi'
 import { useEffect, useState } from 'react'
 
-import {gapi} from 'gapi-script'
+import {gapi} from  'gapi-script'
 import Footer from './Footer.js'
 import Profile from './Profile.js'
 import {GoogleLogin} from 'react-google-login'
