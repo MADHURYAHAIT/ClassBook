@@ -8,13 +8,12 @@ import Profile from './Profile.js'
 import {GoogleLogin} from 'react-google-login'
 import {FcGoogle} from 'react-icons/fc'
 
-
 export const logo ='./logo/1.png'
 export const logo2 ='./logo/google.png'
 
 
 const clientId="36910271547-g4gf1pe3a3ln92sfmj6n293s5k3vfnrp.apps.googleusercontent.com";
-const Home = () => {
+const Home = () =>  {
   
   const[UserData,setData]=useState('f')
   const[flag,setFlag]=useState(true);
