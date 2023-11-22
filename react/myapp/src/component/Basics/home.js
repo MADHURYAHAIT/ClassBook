@@ -51,7 +51,6 @@ const Home = ()  =>  {
           <BiSolidUserPin className='l'/>
           <h1>class<div className='book'>book</div></h1>
         </div>
-
         <div class="container">
                         <img src="https://i.pinimg.com/originals/dd/17/cb/dd17cb0f0e436fa60ace35306478a32d.png"/>
                         <div class="content">
