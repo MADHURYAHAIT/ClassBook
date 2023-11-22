@@ -110,7 +110,6 @@ const About = () => {
                         So even if some person does not do well in the first impression, he can be judge and on the basis of this app.
                         Let's take an example of a person who is doing well for this community. One can know whether to trust him or not on the basis of this.
                     </p>
-
                     <p><p><a href="#top" style={{ color: 'wheat' }}><FaCircleArrowUp style={{ fontSize: '70px' }} /></a></p></p> <br />
                 </aside>
                 <Footer />
