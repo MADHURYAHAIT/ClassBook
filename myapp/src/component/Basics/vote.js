@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { TbArrowBigDown ,TbArrowBigUp} from "react-icons/tb";
+import { MdOutlineComment } from "react-icons/md";
+
 import Star from './Star';
+
 const Vote = ({ studentId },{Nav}) => {
 
   // Use local storage key specific to each student
@@ -92,10 +95,14 @@ const Vote = ({ studentId },{Nav}) => {
       <div class="roww" style={{fontSize:'20px',color:'red'}}>  Stalkers : {follower}
       </div>
         <br/>
+
         <div class="roww">
             <div class="votes">
                 <TbArrowBigUp className="votes1"  onClick={handleUpvote}/> {Up}
                 <TbArrowBigDown className="votes2" onClick={handleDownvote}/>{down}
+            </div>
+            <div class="cmntbox">
+             <MdOutlineComment  className="comment" />
             </div>
             <span className='card-tag subtle' onClick={follow}>Stalk Me</span>
         </div>

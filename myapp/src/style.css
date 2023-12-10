@@ -797,18 +797,25 @@ hr{
 }
 .votes1:hover{
   color: rgb(159, 255, 5);
-  /* scale: 1.05;
-  transition: 0.3s; */
+
+  transition: 0.3s;
 }
 .votes2{
   /* color: #e12020; */
 }
 .votes2:hover{
   color: #ff7b00;
-  /* scale: 1.05;
-  border-radius: 50%;
-  transition: 0.3s; */
+  transition: 0.3s;
 }
+.comment{
+  font-size: 28px;
+  padding-top: 5px;
+}
+.comment:hover{
+  color: #ffffff;
+  transition: 0.3s;
+}
+
 .votes{
   background-color: #3c3c3c;
   justify-content: center;
@@ -818,6 +825,17 @@ hr{
   padding: 6px;
   padding-right: 5%;
   border-radius: 20px;
+}
+
+.cmntbox{
+  background-color: #3c3c3c;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 23%;
+  padding: 6px;
+  border-radius: 20px;
+
 }
 
 .roww{
