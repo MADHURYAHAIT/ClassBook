@@ -5,8 +5,6 @@ import Footer from './Footer'
 import GoogleLogout from './logout'
 
 
-
-
 const Profile = (Prp) => {
  
         const url=Prp.profData.imageUrl;

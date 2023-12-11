@@ -66,7 +66,7 @@ const Vote = ({ studentId },{Nav}) => {
 
 
   const handleUpvote = () => {
-    if (flag<=0){
+    if (flag<=5){
     setVotes(votes + 1);
     setUp(Up+1);
      setflag(flag+1);   }
@@ -74,7 +74,7 @@ const Vote = ({ studentId },{Nav}) => {
   };
 
   const handleDownvote = () => {
-    if (flag<=0){   
+    if (flag<=5){   
     setVotes(votes + 1);
     setDown(down+1);
     setflag(flag+1);
