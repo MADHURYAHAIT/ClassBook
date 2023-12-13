@@ -676,9 +676,9 @@ hr{
   width: 100%;
   color: rgb(165, 165, 165);
   display: flex;
-  padding: 18px;
+  padding: 12px;
   flex-direction: column-reverse;
-  font-size:15px;
+  font-size:14px;
   align-items: center;
   align-self: center;
   flex-direction: column;
