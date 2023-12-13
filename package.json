@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "testing-library": "^0.0.2"
+  }
+}
