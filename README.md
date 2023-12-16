@@ -1,3 +1,3 @@
 # ClassBook
 <hr/>
-Class book is a cool social platform.
+Classbook is a cool social platform. 
