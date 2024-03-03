@@ -1,4 +1,4 @@
-# ClassBook
+# ClassBook 🌐
 <hr/>
 <p>
 Classbook is a cool social platform currently for my class Artificial Intelligence & Data Science ! On this platform you can rate a person for who they really actually are as a person. Currently you can only do it for thr students of Artificial Intelligenc & Data Science of Sikkim Manipal Institue of Technology. 
