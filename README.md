@@ -14,3 +14,18 @@ It's live on :
 Here's a vidoe demonstration of it :
 
 https://github.com/MADHURYAHAIT/NutriSync/assets/101663118/01144f1b-0773-40d5-9c04-63fdb92ce9f3
+
+To run it :
+
+Clone the repo 
+
+Open terminal in the location 
+
+run the following commands:
+make sure you have npm installed 
+
+    npm i 
+
+to start the server
+
+    npm start
